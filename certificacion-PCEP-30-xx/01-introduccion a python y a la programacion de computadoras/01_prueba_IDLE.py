@@ -2,10 +2,10 @@
 print("Hisssssss...")
 
 # Esta es una prueba que generaría un error
-print"hissssssss..."
+# print"hissssssss..."
 
 # Esta es la última prueba para generar un mensaje de error
-prin("hisssssss...")
+# prin("hisssssss...")
 
 # El mensaje de error muestra:
 
