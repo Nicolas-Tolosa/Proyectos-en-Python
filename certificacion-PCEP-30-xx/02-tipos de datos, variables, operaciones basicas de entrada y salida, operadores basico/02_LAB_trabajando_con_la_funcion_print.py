@@ -45,4 +45,121 @@ print("hola mundo \\") # Se utiliza \\ para poder representar en pantalla un sol
 
 # MULTIPLES ARGUMENTOS
 
-print("hola", "mundo", "estos son", "muchos argumentos")  # Es importante destacar que no es necesario escribir un espacio " " al final de cada palabra para que aparezcan separadas.
+print("hola", "mundo", "estos son", "muchos argumentos")  # Es importante destacar qu sario escribir un espacio " " al final de cada palabra para que aparezcan separadas.
+
+# ARGUMENTOS DE PALABRA CLAVE
+
+# Cualquier argumento de palabra clave debe colocarse después del último argumento posicional (esto es muy importante)
+# El comportamiento predeterminado de "end" refleja la situación en la que el argumento de palabra clave end se usa implícitamente de la siguiente manera: end="\n".
+
+#########################################
+# LAB La función print() y sus argumentos
+
+# ESCENARIO
+
+# Modifica la primera línea de código en el editor, usando las palabras claves reservadas sep y end, para que se obtenga la salida esperada. Emplea dos funciones print() en el editor.
+# No cambies nada en la segunda invocación del print().
+
+print("Programming","Essentials","in")
+print("Python")
+
+# Respuesta 1: Salida esperada => Programming***Essentials***in...Python
+print("Programming","Essentials","in",sep="***",end="...")
+print("Python")
+
+# LAB Dando formato a la salida
+
+# ESCENARIO
+
+# Te recomendamos encarecidamente que juegues con el código que hemos escrito para y realiza algunos (quizás incluso destructivos) cambios. Siéntete libre de modificar cualquier parte del código, pero hay una condición - aprende de tus errores y saca tus propias conclusiones.
+
+# Intenta:
+
+# 1. minimizar el número de invocaciones de la función print() insertando \n en las cadenas;
+# 2. hacer que la flecha sea el doble de grande (pero mantener las proporciones)
+# 3. duplica la flecha, colocando ambas flechas una al lado de la otra; nota: una cadena se puede multiplicar usando el siguiente truco: "string" * 2 producirá "stringstring" (pronto contaremos más al respecto)
+# 4. elimina cualquiera de las comillas y observe detenidamente la respuesta de Python; presta atención a dónde Python ve un error - ¿es este el lugar donde realmente existe el error?
+# 5. haz lo mismo con algunos de los paréntesis;
+# 6. cambia cualquiera de las palabras print por otra cosa, que difiera solo en mayúsculas y minúsculas (por ejemplo, Print) - qué sucede ahora?
+# 7. reemplaza algunas de las comillas con apóstrofes; observa lo que sucede con cuidado.
+
+# Codigo: 
+
+
+
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# Respuesta 1
+print("    *","   * *","  *   *"," *     *","***   ***","  *   *","  *   *","  *****",sep="\n")
+
+# Respuesta 2
+print("        *")
+print("       * *")
+print("      *   *")
+print("     *     *")
+print("    *       *")
+print("   *         *")
+print("  *           *")
+print(" *             *")
+print("******     ******")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *******")
+
+# Respuesta 3
+print("    *     "*2)
+print("   * *    "*2)
+print("  *   *   "*2)
+print(" *     *  "*2)
+print("***   *** "*2)
+print("  *   *   "*2)
+print("  *   *   "*2)
+print("  *****   "*2)
+
+# Respuesta 4
+# print("    *)
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# El error que aparece "statements must be separated by colon or semicolon" significa que la sintaxis para separar bloques de codigo o declaraciones es incorrecta
+
+# Respuesta 5
+# Print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# El error "is not defined" significa que la variable "Print" no está definida
+
+# Respuesta 6
+print('    *')
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# No hay ningun error al cambiar las doble comillas "" por apostrofes ''
+
