@@ -163,3 +163,7 @@ print("  *****")
 
 # No hay ningun error al cambiar las doble comillas "" por apostrofes ''
 
+print('Greg\'s book.')
+print("'Greg's book.'")
+print('"Greg\'s book."')
+print("Greg\'s book.")
