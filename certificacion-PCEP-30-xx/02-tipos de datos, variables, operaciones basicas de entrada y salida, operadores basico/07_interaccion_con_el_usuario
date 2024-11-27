@@ -1,0 +1,82 @@
+# Ahora se introducirá una nueva función, la cual pareciese ser un reflejo de la función print(). La funcion input()
+
+# La función input() es capaz de leer datos que fueron introducidos por el usuario y pasar esos datos al programa en ejecución.
+
+print("Dime lo que sea...")
+anything = input()
+print("Hmm...", anything, "... ¿en serio?")
+
+# La funcion input() devuelve como resultado una cadena, es decir, que no puede ser operado como un numero. Para resolver este problema se pueden convertir tipos de datos a otros
+
+# Conversion de tipos
+
+# La función int() y la funcion float(), toman un argumento e intentan convertirlo en un valor entero o flotante según corresponda. Estas funciones pueden ser invocadas directamente, esto, pasando el resultado de la funcion input() directamente.
+
+anything = float(input("Ingresa un numero: ")) # La funcion float() recibe como argumento el return de la funcion input()
+something = anything ** 2.0
+print(anything, "a la potencia de 2 es", something)
+
+# Operadores de cadena
+
+# Los operadores "+" y "*" ambos tienen una funcion secundaria. El operador + al aplicarse en medio de dos cadenas se convierte en un operador de concatenacion. Mientras que el operador * al aplicarse a una cadena o a un numero se convierte en un operador de replicación.
+
+string = "hola mundo "
+number = 8
+
+print(string + string) # Operador de concatenación
+print(string * 4) # Operador de replicación
+
+# Otros conversores de tipos
+
+# Cuando hablamos de conversiones de tipos, no solo puede ser de una cadena a un numero, sino tambien de numero a cadena. Esto es posible gracias al conversor str().
+
+print(str(number*8))
+
+# LAB Entradas y salidas simples
+
+# Escenario
+
+# Tu tarea es completar el código para evaluar los resultados de cuatro operaciones aritméticas básicas.
+# Los resultados deben imprimirse en la consola.
+# Es posible que no puedas proteger el código de un usuario que quiera dividir entre cero. Está bien, no te preocupes por eso por ahora.
+# Prueba tu código - ¿produce los resultados esperados?
+# No te mostraremos ningún dato de prueba - eso sería demasiado simple.
+
+
+# Codigo
+
+# ingresa un valor flotante para la variable a aquí
+# ingresa un valor flotante para la variable b aquí
+
+# mostrar el resultado de la suma aquí
+# mostrar el resultado de la resta aquí
+# mostrar el resultado de la multiplicación aquí
+# mostrar el resultado de la división aquí
+
+print("\n¡Eso es todo, amigos!")
+
+# Respuesta
+a = 3.5
+b = 9.0
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print("\n¡Eso es todo, amigos!")
+
+# LAB Operadores y expresiones
+
+# Escenario
+
+# Tu tarea es completar el código para poder evaluar la siguiente expresión:
+
+# 1/(x+(1/x+(1/x+1)))
+
+# El resultado debe de ser asignado a y. Se cauteloso, observa los operadores y priorízalos. Utiliza cuantos paréntesis sean necesarios.
+# Puedes utilizar variables adicionales para acortar la expresión (sin embargo, no es muy necesario). Prueba tu código cuidadosamente.
+
+# Respuesta
+x = 10
+y = 1/(x+(1/(x+(1/(x+(1/x))))))
+print(y)
