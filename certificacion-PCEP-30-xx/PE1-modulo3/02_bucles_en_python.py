@@ -325,8 +325,3 @@ while c0 != 1 and c0 > 0:
         print(c0)
 print("Pasos = ", count)
 
-
-for ch in "john.smith@pythoninstitute.org":
-    if ch == "@":
-        break
-    print(ch, end="")
